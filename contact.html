@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Site officiel de Wave Optique"> 
+    <meta name="keywords" content="Optique Opticien, Audioprothésiste">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <title>Wave Optique</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav_ul">
+                <li class="nav_li"><a href="index.html"><img class="logo" width="50" height="50" src="img/logo.png" alt="Logo de Wave Optique"></a></li>
+                <li class="nav_li"><a class="nav_a" href="optique.html">Optique</a></li>
+                <li class="nav_li"><a class="nav_a" href="audio.html">Audition</a></li>
+                <li class="nav_li"><a class="nav_a" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1 class="contact_titre">Formulaire du Contact</h1>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="prenom">Prenom *</label>
+                <input type="text" id="prenom" placeholder="Prenom" required>
+            </div>
+            <div class="form-group">
+                <label for="nom">Nom *</label>
+                <input type="text" id="nom" placeholder="Nom" required>
+            </div>
+            <div class="form-group-row">
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" placeholder="example@domain.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="telephone">Téléphone</label>
+                    <input type="tel" id="telephone" placeholder="+33-9-99-99-99-99">
+                </div>
+            </div>
+            <div class="form-group full-width">
+                <label for="message">Message *</label>
+                <textarea id="message" placeholder="Message" required></textarea>
+            </div>
+            <button class="button_submit" type="submit">Envoyé</button>
+        </form>
+    </main>
+
+<script src="script.js"></script>
+</body>
+</html>
